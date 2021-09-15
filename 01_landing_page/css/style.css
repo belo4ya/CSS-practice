@@ -5,3 +5,7 @@
 :root {
   --body-font: "JetBrains Mono", monospace;
 }
+
+body {
+  font-family: var(--body-font);
+}
