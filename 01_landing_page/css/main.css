@@ -74,8 +74,6 @@ body {
 }
 
 .header__top {
-    position: relative;
-    z-index: 1;
     margin-bottom: 86px;
 }
 
@@ -204,6 +202,8 @@ body {
     max-width: unset;
     width: 894px;
     height: 940px;
+
+    pointer-events: none;
 }
 
 /* destinations */
