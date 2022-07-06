@@ -700,6 +700,11 @@ body {
         display: none;
     }
 
+    .destinations {
+        padding-top: 48px;
+        padding-bottom: 50px;
+    }
+
     .destinations__row {
         flex-direction: column;
         row-gap: 40px;
@@ -766,6 +771,26 @@ body {
         top: -464px;
         right: -100px;
     }
+
+    .destinations__title {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    .destinations__title span {
+        font-size: 24px;
+    }
+
+    .destinations__text {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .btn-destinations {
+        font-size: 18px;
+        padding: 20px 40px;
+        border-radius: 27px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -828,5 +853,30 @@ body {
 
     .nav-mobile .btn-login {
         font-size: 20px;
+    }
+
+    .destinations__content {
+        max-width: 320px;
+    }
+
+    .destinations__title {
+        font-size: 36px;
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+
+    .destinations__title span {
+        font-size: 20px;
+    }
+
+    .destinations__text {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .btn-destinations {
+        font-size: 16px;
+        padding: 15px 28px;
+        border-radius: 20px;
     }
 }
