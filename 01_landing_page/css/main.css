@@ -596,12 +596,20 @@ body {
 }
 
 @media (max-width: 1000px) {
-    .nav__list {
+    .nav__list-header {
         display: none;
     }
 
-    .nav__login {
+    .nav__login-header {
         display: none;
+    }
+
+    .nav {
+        column-gap: 50px;
+    }
+
+    .nav-list {
+        column-gap: 50px;
     }
 
     .nav__toggle {
@@ -739,6 +747,10 @@ body {
     .cta {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .nav__login-footer {
+        display: none;
     }
 }
 
@@ -897,6 +909,19 @@ body {
         font-size: 18px;
         padding: 20px 40px;
         border-radius: 27px;
+    }
+
+    .footer {
+        padding-bottom: 30px;
+    }
+
+    .nav-footer {
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+
+    .nav__list {
+        column-gap: 36px;
     }
 }
 
