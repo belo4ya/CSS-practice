@@ -24,7 +24,7 @@
     <div class="container">
 
         <div class="header__top">
-            <nav class="nav">
+            <nav id="nav" class="nav">
 
                 <div>
                     <h2 class="logo"><a href="#">GoTrip</a></h2>
@@ -41,6 +41,12 @@
                     <li><a href="#">Sign up</a></li>
                     <li><a href="#" class="btn btn-login">Login</a></li>
                 </ul>
+
+                <div id="nav_toggle" class="nav__toggle">
+                    <div id="menu_icon_wrapper" class="menu-icon-wrapper">
+                        <div id="menu_icon" class="menu-icon"></div>
+                    </div>
+                </div>
 
             </nav>
         </div>
@@ -87,7 +93,7 @@
                 <div class="destinations__slider">
 
                     <div class="slider">
-                        <div class="owl-carousel">
+                        <div id="owl_carousel" class="owl-carousel">
                             <img class="slider__item" src="img/slider/01.jpg" alt="">
                             <img class="slider__item" src="img/slider/02.jpg" alt="">
                             <img class="slider__item" src="img/slider/03.jpg" alt="">
