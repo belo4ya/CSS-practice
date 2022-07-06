@@ -15,6 +15,10 @@ body {
     color: #0f1f1c;
 }
 
+.none {
+    display: none !important;
+}
+
 /* containers */
 
 .container {
@@ -83,7 +87,7 @@ body {
 
 .header__content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 592px;
 }
 
@@ -201,6 +205,7 @@ body {
 
 .header__img img {
     position: absolute;
+    z-index: 1;
     top: -178px;
     right: -100px;
     max-width: unset;
@@ -645,5 +650,133 @@ body {
         top: 50px;
         right: 50px;
         padding-right: 0;
+    }
+
+    .header__img img {
+        right: -260px;
+    }
+
+    .header__img::after {
+        right: -220px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header__row {
+        flex-direction: column;
+    }
+
+    .header__img::after {
+        top: -594px;
+        right: -20px;
+    }
+
+    .header__img img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        min-height: 800px;
+    }
+
+    .header__content {
+        max-width: 520px;
+    }
+
+    .header__badge {
+        margin-bottom: 7px;
+    }
+
+    .badge {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+
+    .header__title {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+
+    .header__text {
+        font-size: 22px;
+        margin-bottom: 48px;
+    }
+
+    .btn-header {
+        font-size: 20px;
+        padding: 18px 28px;
+        border-radius: 20px;
+    }
+
+    .header__img::after {
+        background-size: 80%;
+        background-repeat: no-repeat;
+        top: -464px;
+        right: -100px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        padding-top: 30px;
+    }
+
+    .header__content {
+        max-width: 320px;
+    }
+
+    .header__badge {
+        margin-bottom: 6px;
+    }
+
+    .badge {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .header__title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .header__text {
+        font-size: 20px;
+        margin-bottom: 44px;
+    }
+
+    .btn-header {
+        font-size: 18px;
+        padding: 16px 26px;
+    }
+
+    .header__img::after {
+        background-size: 55%;
+        top: -428px;
+        right: -388px;
+    }
+
+    .nav__toggle {
+        padding-right: 25px;
+    }
+
+    .nav-mobile .nav__toggle {
+        top: 40px;
+        right: 40px;
+    }
+
+    .nav-mobile .logo {
+        font-size: 30px;
+    }
+
+    .nav-mobile .nav__list,
+    .nav-mobile .nav__login {
+        font-size: 20px;
+        row-gap: 28px;
+    }
+
+    .nav-mobile .btn-login {
+        font-size: 20px;
     }
 }
