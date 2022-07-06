@@ -878,6 +878,26 @@ body {
         padding: 20px 40px;
         border-radius: 27px;
     }
+
+    .subscribe__title {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    .subscribe-form {
+        padding: 10px 12px;
+    }
+
+    .subscribe-form__input {
+        padding: 0 24px;
+        font-size: 18px;
+    }
+
+    .btn-subscribe {
+        font-size: 18px;
+        padding: 20px 40px;
+        border-radius: 27px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -1020,6 +1040,31 @@ body {
     }
 
     .btn-cta {
+        font-size: 16px;
+        padding: 15px 28px;
+        border-radius: 20px;
+    }
+
+    .subscribe {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .subscribe__title {
+        font-size: 36px;
+        margin-bottom: 18px;
+    }
+
+    .subscribe-form {
+        padding: 10px 12px;
+    }
+
+    .subscribe-form__input {
+        padding: 0 18px;
+        font-size: 16px;
+    }
+
+    .btn-subscribe {
         font-size: 16px;
         padding: 15px 28px;
         border-radius: 20px;
